@@ -3,7 +3,12 @@
 
 #include "GameActor.h" 
 #include "InputHandler.h" 
+
+#include "World.h"
+
 #include <iostream>
+
+
 
 void CommandTestLoop() {
     GameActor* gameActor = new GameActor(new InputHandler());
@@ -13,6 +18,18 @@ void CommandTestLoop() {
     }
 }
 
+
+void FlyweightTest() {
+    World world = World();
+
+    world.GenerateTilesTerrain();
+    
+    Terrain terrain = world.GetTileTerrain(1, 1);
+    std::cout << terrain.GetMoveCost() << " " << terrain.GetIsTrapped() << " " << terrain.GetIsBlocked();
+}
+
+
 int main() {
-    CommandTestLoop();
+    //CommandTestLoop();
+    FlyweightTest();
 }

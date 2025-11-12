@@ -16,6 +16,9 @@
     <Filter Include="Fichiers sources\Command">
       <UniqueIdentifier>{09f18e0a-ba1f-4b2e-9289-54ba1abcd928}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Flyweight">
+      <UniqueIdentifier>{e82040d0-a194-4dbf-887d-43e1f19607e5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -30,6 +33,12 @@
     <ClCompile Include="InputHandler.cpp">
       <Filter>Fichiers sources\Command</Filter>
     </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Fichiers sources\Flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Fichiers sources\Flyweight</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">
@@ -40,6 +49,12 @@
     </ClInclude>
     <ClInclude Include="InputHandler.h">
       <Filter>Fichiers sources\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Fichiers sources\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>Fichiers sources\Flyweight</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
