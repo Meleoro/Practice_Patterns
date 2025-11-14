@@ -127,6 +127,9 @@
     <ClCompile Include="GameActor.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="ObserverClassExample.cpp" />
+    <ClCompile Include="Subject.cpp" />
+    <ClCompile Include="SubjectClassExample.cpp" />
     <ClCompile Include="Terrain.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
@@ -134,6 +137,10 @@
     <ClInclude Include="Command.h" />
     <ClInclude Include="GameActor.h" />
     <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="ObserverClassExample.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Subject.h" />
+    <ClInclude Include="SubjectClassExample.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>

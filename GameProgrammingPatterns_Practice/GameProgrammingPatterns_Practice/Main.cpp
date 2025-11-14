@@ -6,6 +6,9 @@
 
 #include "World.h"
 
+#include "ObserverClassExample.h"
+#include "SubjectClassExample.h"
+
 #include <iostream>
 
 
@@ -18,7 +21,6 @@ void CommandTestLoop() {
     }
 }
 
-
 void FlyweightTest() {
     World world = World();
 
@@ -28,8 +30,19 @@ void FlyweightTest() {
     std::cout << terrain.GetMoveCost() << " " << terrain.GetIsTrapped() << " " << terrain.GetIsBlocked();
 }
 
+void ObserverTest() {
+    SubjectClassExample* subject = new SubjectClassExample();
+    ObserverClassExample* observer = new ObserverClassExample();
+
+    subject->onSomethingHappened->AddObserver(observer);
+
+    subject->DoSomething();
+}
+
 
 int main() {
     //CommandTestLoop();
-    FlyweightTest();
+    //FlyweightTest();
+
+    ObserverTest();
 }

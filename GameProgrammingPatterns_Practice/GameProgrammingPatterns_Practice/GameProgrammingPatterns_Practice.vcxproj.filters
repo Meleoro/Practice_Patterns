@@ -19,6 +19,9 @@
     <Filter Include="Fichiers sources\Flyweight">
       <UniqueIdentifier>{e82040d0-a194-4dbf-887d-43e1f19607e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Observer">
+      <UniqueIdentifier>{de7cbe6d-e872-41f6-8cf4-3c6f155ee68f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -39,6 +42,15 @@
     <ClCompile Include="World.cpp">
       <Filter>Fichiers sources\Flyweight</Filter>
     </ClCompile>
+    <ClCompile Include="Subject.cpp">
+      <Filter>Fichiers sources\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="ObserverClassExample.cpp">
+      <Filter>Fichiers sources\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="SubjectClassExample.cpp">
+      <Filter>Fichiers sources\Observer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">
@@ -55,6 +67,18 @@
     </ClInclude>
     <ClInclude Include="World.h">
       <Filter>Fichiers sources\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Fichiers sources\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Fichiers sources\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="ObserverClassExample.h">
+      <Filter>Fichiers sources\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="SubjectClassExample.h">
+      <Filter>Fichiers sources\Observer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
