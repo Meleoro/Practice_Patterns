@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -124,11 +124,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Command.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
     <ClCompile Include="GameActor.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="ObserverClassExample.cpp" />
+    <ClCompile Include="RandomClass.cpp" />
     <ClCompile Include="Spawner.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="SubjectClassExample.cpp" />
@@ -142,6 +144,8 @@
     <ClInclude Include="Monster.h" />
     <ClInclude Include="ObserverClassExample.h" />
     <ClInclude Include="Observer.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="RandomClass.h" />
     <ClInclude Include="Spawner.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="SubjectClassExample.h" />

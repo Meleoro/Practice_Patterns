@@ -12,6 +12,9 @@
 #include "Monster.h"
 #include "Spawner.h"
 
+#include "RandomClass.h"
+#include "FileSystem.h"
+
 #include <iostream>
 
 
@@ -43,7 +46,6 @@ void ObserverTest() {
 }
 
 void PrototypeTest() {
-
     Ghost* prototype = new Ghost(10, 10);
     Spawner* ghostSpawner = new Spawner(prototype);
 
@@ -52,11 +54,19 @@ void PrototypeTest() {
     std::cout << spawnedGhost->Health() << std::endl;
 }
 
+void SingletonTest() {
+
+    RandomClass* randomClass = new RandomClass();
+
+    randomClass->DoStuff();
+}
+
 
 int main() {
     //CommandTestLoop();
     //FlyweightTest();
     //ObserverTest();
+    //PrototypeTest();
 
-    PrototypeTest();
+    SingletonTest();
 }

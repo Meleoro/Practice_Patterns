@@ -25,6 +25,9 @@
     <Filter Include="Fichiers sources\Prototype">
       <UniqueIdentifier>{175498d0-6155-49d6-9a00-08f83fca6912}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Singleton">
+      <UniqueIdentifier>{3116980d-f343-4cc7-be90-ffd8b90e0835}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -54,11 +57,17 @@
     <ClCompile Include="SubjectClassExample.cpp">
       <Filter>Fichiers sources\Observer</Filter>
     </ClCompile>
-    <ClCompile Include="Spawner.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Monster.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner.cpp">
+      <Filter>Fichiers sources\Prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="FileSystem.cpp">
+      <Filter>Fichiers sources\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomClass.cpp">
+      <Filter>Fichiers sources\Singleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +103,12 @@
     </ClInclude>
     <ClInclude Include="Spawner.h">
       <Filter>Fichiers sources\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="FileSystem.h">
+      <Filter>Fichiers sources\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomClass.h">
+      <Filter>Fichiers sources\Singleton</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
