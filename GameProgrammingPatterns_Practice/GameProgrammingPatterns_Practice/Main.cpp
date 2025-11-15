@@ -9,6 +9,9 @@
 #include "ObserverClassExample.h"
 #include "SubjectClassExample.h"
 
+#include "Monster.h"
+#include "Spawner.h"
+
 #include <iostream>
 
 
@@ -39,10 +42,21 @@ void ObserverTest() {
     subject->DoSomething();
 }
 
+void PrototypeTest() {
+
+    Ghost* prototype = new Ghost(10, 10);
+    Spawner* ghostSpawner = new Spawner(prototype);
+
+    Ghost* spawnedGhost = (Ghost*)(ghostSpawner->SpawnMonster());
+
+    std::cout << spawnedGhost->Health() << std::endl;
+}
+
 
 int main() {
     //CommandTestLoop();
     //FlyweightTest();
+    //ObserverTest();
 
-    ObserverTest();
+    PrototypeTest();
 }

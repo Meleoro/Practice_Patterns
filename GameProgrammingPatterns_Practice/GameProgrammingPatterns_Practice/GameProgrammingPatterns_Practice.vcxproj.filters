@@ -22,6 +22,9 @@
     <Filter Include="Fichiers sources\Observer">
       <UniqueIdentifier>{de7cbe6d-e872-41f6-8cf4-3c6f155ee68f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Prototype">
+      <UniqueIdentifier>{175498d0-6155-49d6-9a00-08f83fca6912}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -51,6 +54,12 @@
     <ClCompile Include="SubjectClassExample.cpp">
       <Filter>Fichiers sources\Observer</Filter>
     </ClCompile>
+    <ClCompile Include="Spawner.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">
@@ -79,6 +88,12 @@
     </ClInclude>
     <ClInclude Include="SubjectClassExample.h">
       <Filter>Fichiers sources\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Fichiers sources\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Fichiers sources\Prototype</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
