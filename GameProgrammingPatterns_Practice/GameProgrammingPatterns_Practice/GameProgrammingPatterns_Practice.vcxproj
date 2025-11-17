@@ -130,8 +130,10 @@
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="Monster.cpp" />
     <ClCompile Include="ObserverClassExample.cpp" />
+    <ClCompile Include="PlayerCharacter.cpp" />
     <ClCompile Include="RandomClass.cpp" />
     <ClCompile Include="Spawner.cpp" />
+    <ClCompile Include="States.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="SubjectClassExample.cpp" />
     <ClCompile Include="Terrain.cpp" />
@@ -145,8 +147,10 @@
     <ClInclude Include="ObserverClassExample.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="PlayerCharacter.h" />
     <ClInclude Include="RandomClass.h" />
     <ClInclude Include="Spawner.h" />
+    <ClInclude Include="States.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="SubjectClassExample.h" />
     <ClInclude Include="Terrain.h" />

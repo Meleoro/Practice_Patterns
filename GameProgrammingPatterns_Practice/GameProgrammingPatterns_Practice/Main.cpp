@@ -15,6 +15,8 @@
 #include "RandomClass.h"
 #include "FileSystem.h"
 
+#include "PlayerCharacter.h"
+
 #include <iostream>
 
 
@@ -62,11 +64,22 @@ void SingletonTest() {
 }
 
 
+void StatesTest() {
+    PlayerCharacter* player = new PlayerCharacter();
+
+    while (true) {
+        player->HandleInput();
+        player->Update();
+    }
+}
+
+
 int main() {
     //CommandTestLoop();
     //FlyweightTest();
     //ObserverTest();
     //PrototypeTest();
+    //SingletonTest();
 
-    SingletonTest();
+    StatesTest();
 }

@@ -28,6 +28,9 @@
     <Filter Include="Fichiers sources\Singleton">
       <UniqueIdentifier>{3116980d-f343-4cc7-be90-ffd8b90e0835}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\State">
+      <UniqueIdentifier>{03e1283c-694f-4c4a-ab13-d272d274894b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -69,6 +72,12 @@
     <ClCompile Include="RandomClass.cpp">
       <Filter>Fichiers sources\Singleton</Filter>
     </ClCompile>
+    <ClCompile Include="States.cpp">
+      <Filter>Fichiers sources\State</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerCharacter.cpp">
+      <Filter>Fichiers sources\State</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">
@@ -109,6 +118,12 @@
     </ClInclude>
     <ClInclude Include="RandomClass.h">
       <Filter>Fichiers sources\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="States.h">
+      <Filter>Fichiers sources\State</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerCharacter.h">
+      <Filter>Fichiers sources\State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
