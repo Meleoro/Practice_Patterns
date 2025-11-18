@@ -31,6 +31,9 @@
     <Filter Include="Fichiers sources\State">
       <UniqueIdentifier>{03e1283c-694f-4c4a-ab13-d272d274894b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\DoubleBuffer">
+      <UniqueIdentifier>{0092a441-c07b-4c6b-9beb-19303640d04f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -78,6 +81,9 @@
     <ClCompile Include="PlayerCharacter.cpp">
       <Filter>Fichiers sources\State</Filter>
     </ClCompile>
+    <ClCompile Include="Domino.cpp">
+      <Filter>Fichiers sources\DoubleBuffer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">
@@ -124,6 +130,9 @@
     </ClInclude>
     <ClInclude Include="PlayerCharacter.h">
       <Filter>Fichiers sources\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Domino.h">
+      <Filter>Fichiers sources\DoubleBuffer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

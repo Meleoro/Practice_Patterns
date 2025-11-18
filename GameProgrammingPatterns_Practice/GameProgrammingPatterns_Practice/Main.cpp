@@ -17,6 +17,9 @@
 
 #include "PlayerCharacter.h"
 
+#include "Domino.h"
+#include <vector>
+
 #include <iostream>
 
 
@@ -73,6 +76,40 @@ void StatesTest() {
     }
 }
 
+void DoubleBufferTest() {
+    Domino* domino1 = new Domino();
+    Domino* domino2 = new Domino();
+    Domino* domino3 = new Domino();
+
+    domino1->SetPrevious(domino3);
+    domino2->SetPrevious(domino1);
+    domino3->SetPrevious(domino2);
+
+    std::vector<Domino*> dominoes = { domino1, domino2, domino3 };
+    domino1->Push();
+
+
+    // To experiment with a Double Buffer, I wanted dominoes to do their behavior sequentially and 
+    // the behavior to be the same for any loop directions (from A to Z and from Z to A)
+    // So I used two buffers that I "swap" at the end of each frame 
+    for (int i = 0; i < 3; i++) {
+
+        for (int i = 0; i < dominoes.size(); i++) {
+            dominoes[i]->Update();
+        }
+
+        for (int i = 0; i < dominoes.size(); i++) {
+            dominoes[i]->Swap();
+        }
+
+        for (int i = 0; i < dominoes.size(); i++) {
+            std::cout << "Domino " << i << " is " << (dominoes[i]->IsPushed() ? "Pushed" : "Standing") << "   ";
+        }
+
+        std::cout << std::endl;
+    }
+}
+
 
 int main() {
     //CommandTestLoop();
@@ -80,6 +117,7 @@ int main() {
     //ObserverTest();
     //PrototypeTest();
     //SingletonTest();
+    //StatesTest();
 
-    StatesTest();
+    DoubleBufferTest();
 }

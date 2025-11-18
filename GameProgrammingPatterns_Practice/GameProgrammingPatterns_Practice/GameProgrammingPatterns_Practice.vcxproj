@@ -124,6 +124,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Command.cpp" />
+    <ClCompile Include="Domino.cpp" />
     <ClCompile Include="FileSystem.cpp" />
     <ClCompile Include="GameActor.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="Observer.h" />
     <ClInclude Include="FileSystem.h" />
     <ClInclude Include="PlayerCharacter.h" />
+    <ClInclude Include="Domino.h" />
     <ClInclude Include="RandomClass.h" />
     <ClInclude Include="Spawner.h" />
     <ClInclude Include="States.h" />
