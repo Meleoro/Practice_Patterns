@@ -18,8 +18,10 @@
 #include "PlayerCharacter.h"
 
 #include "Domino.h"
-#include <vector>
 
+#include "GameLoop.h"
+
+#include <vector>
 #include <iostream>
 
 
@@ -110,6 +112,13 @@ void DoubleBufferTest() {
     }
 }
 
+void GameLoopTest() {
+    GameLoop* gameLoop = new GameLoop();
+
+    gameLoop->DoGameLoop();
+}
+
+
 
 int main() {
     //CommandTestLoop();
@@ -118,6 +127,7 @@ int main() {
     //PrototypeTest();
     //SingletonTest();
     //StatesTest();
+    //DoubleBufferTest();
 
-    DoubleBufferTest();
+    GameLoopTest();
 }

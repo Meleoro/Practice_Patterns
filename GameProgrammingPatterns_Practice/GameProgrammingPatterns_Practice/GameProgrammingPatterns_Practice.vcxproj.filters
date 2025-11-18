@@ -34,6 +34,9 @@
     <Filter Include="Fichiers sources\DoubleBuffer">
       <UniqueIdentifier>{0092a441-c07b-4c6b-9beb-19303640d04f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\GameLoop">
+      <UniqueIdentifier>{cccf1c51-2f83-40a4-b834-f262477027a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -84,6 +87,9 @@
     <ClCompile Include="Domino.cpp">
       <Filter>Fichiers sources\DoubleBuffer</Filter>
     </ClCompile>
+    <ClCompile Include="GameLoop.cpp">
+      <Filter>Fichiers sources\GameLoop</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Command.h">
@@ -133,6 +139,9 @@
     </ClInclude>
     <ClInclude Include="Domino.h">
       <Filter>Fichiers sources\DoubleBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLoop.h">
+      <Filter>Fichiers sources\GameLoop</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
