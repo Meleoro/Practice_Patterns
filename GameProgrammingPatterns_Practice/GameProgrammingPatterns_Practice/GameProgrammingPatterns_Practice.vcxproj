@@ -142,7 +142,9 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Breed.h" />
     <ClInclude Include="Command.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameActor.h" />
     <ClInclude Include="GameLoop.h" />
     <ClInclude Include="InputHandler.h" />
@@ -157,6 +159,7 @@
     <ClInclude Include="States.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="SubjectClassExample.h" />
+    <ClInclude Include="Superpower.h" />
     <ClInclude Include="Terrain.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>

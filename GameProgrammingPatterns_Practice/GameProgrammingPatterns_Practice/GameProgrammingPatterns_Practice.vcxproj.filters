@@ -37,6 +37,12 @@
     <Filter Include="Fichiers sources\GameLoop">
       <UniqueIdentifier>{cccf1c51-2f83-40a4-b834-f262477027a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\SubclassSandox">
+      <UniqueIdentifier>{637a6924-5fcc-4a2c-9825-d37107b77aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\TypeObject">
+      <UniqueIdentifier>{40048e65-25ac-491a-a010-d298a0dd69bb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -142,6 +148,15 @@
     </ClInclude>
     <ClInclude Include="GameLoop.h">
       <Filter>Fichiers sources\GameLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Superpower.h">
+      <Filter>Fichiers sources\SubclassSandox</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Fichiers sources\TypeObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Breed.h">
+      <Filter>Fichiers sources\TypeObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

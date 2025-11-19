@@ -21,6 +21,8 @@
 
 #include "GameLoop.h"
 
+#include "Enemy.h"
+
 #include <vector>
 #include <iostream>
 
@@ -119,6 +121,14 @@ void GameLoopTest() {
 }
 
 
+void TypeObjectTest() {
+    Breed ghost = Breed(5, 1, 10);
+    Enemy* enemy = new Enemy(ghost);
+
+    std::cout << enemy->GetCurrentHealth();
+}
+
+
 
 int main() {
     //CommandTestLoop();
@@ -128,6 +138,7 @@ int main() {
     //SingletonTest();
     //StatesTest();
     //DoubleBufferTest();
+    //GameLoopTest();
 
-    GameLoopTest();
+    TypeObjectTest();
 }
