@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Audio.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="Domino.cpp" />
     <ClCompile Include="FileSystem.cpp" />
@@ -142,6 +143,7 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Audio.h" />
     <ClInclude Include="Breed.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="Enemy.h" />

@@ -43,6 +43,9 @@
     <Filter Include="Fichiers sources\TypeObject">
       <UniqueIdentifier>{40048e65-25ac-491a-a010-d298a0dd69bb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\EventQueue">
+      <UniqueIdentifier>{e666775b-f7cb-4efd-8f1c-e3355fc7bd40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -95,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="GameLoop.cpp">
       <Filter>Fichiers sources\GameLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Fichiers sources\EventQueue</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="Breed.h">
       <Filter>Fichiers sources\TypeObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Fichiers sources\EventQueue</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -23,6 +23,8 @@
 
 #include "Enemy.h"
 
+#include "Audio.h"
+
 #include <vector>
 #include <iostream>
 
@@ -129,6 +131,21 @@ void TypeObjectTest() {
 }
 
 
+void EventQueueTest() {
+    Audio* audio = new Audio();
+    audio->StartThread();
+
+    while (true) {
+        if (std::rand() % 100 == 0) {
+            audio->PlaySound(1, 0.5f);   
+        }
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(1));
+    }
+
+    audio->StopThread();
+}
+
 
 int main() {
     //CommandTestLoop();
@@ -139,6 +156,7 @@ int main() {
     //StatesTest();
     //DoubleBufferTest();
     //GameLoopTest();
+    //TypeObjectTest();
 
-    TypeObjectTest();
+    EventQueueTest();
 }
