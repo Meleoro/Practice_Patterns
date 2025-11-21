@@ -129,6 +129,8 @@
     <ClCompile Include="FileSystem.cpp" />
     <ClCompile Include="GameActor.cpp" />
     <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="Locator.cpp" />
+    <ClCompile Include="LogServiceInterface.h" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="Monster.cpp" />
@@ -150,6 +152,8 @@
     <ClInclude Include="GameActor.h" />
     <ClInclude Include="GameLoop.h" />
     <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="Locator.h" />
+    <ClInclude Include="LogService.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="ObserverClassExample.h" />
     <ClInclude Include="Observer.h" />

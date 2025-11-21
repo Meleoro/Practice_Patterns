@@ -25,6 +25,9 @@
 
 #include "Audio.h"
 
+#include "Locator.h"
+#include "LogService.h"
+
 #include <vector>
 #include <iostream>
 
@@ -38,6 +41,7 @@ void CommandTestLoop() {
     }
 }
 
+
 void FlyweightTest() {
     World world = World();
 
@@ -46,6 +50,7 @@ void FlyweightTest() {
     Terrain terrain = world.GetTileTerrain(1, 1);
     std::cout << terrain.GetMoveCost() << " " << terrain.GetIsTrapped() << " " << terrain.GetIsBlocked();
 }
+
 
 void ObserverTest() {
     SubjectClassExample* subject = new SubjectClassExample();
@@ -56,6 +61,7 @@ void ObserverTest() {
     subject->DoSomething();
 }
 
+
 void PrototypeTest() {
     Ghost* prototype = new Ghost(10, 10);
     Spawner* ghostSpawner = new Spawner(prototype);
@@ -64,6 +70,7 @@ void PrototypeTest() {
 
     std::cout << spawnedGhost->Health() << std::endl;
 }
+
 
 void SingletonTest() {
 
@@ -81,6 +88,7 @@ void StatesTest() {
         player->Update();
     }
 }
+
 
 void DoubleBufferTest() {
     Domino* domino1 = new Domino();
@@ -116,6 +124,7 @@ void DoubleBufferTest() {
     }
 }
 
+
 void GameLoopTest() {
     GameLoop* gameLoop = new GameLoop();
 
@@ -147,6 +156,14 @@ void EventQueueTest() {
 }
 
 
+void ServiceLocatorTest() {
+
+    Locator::Provide(new LogService());
+
+    Locator::GetLogService()->DisplayMessage("It works !");
+}
+
+
 int main() {
     //CommandTestLoop();
     //FlyweightTest();
@@ -157,6 +174,7 @@ int main() {
     //DoubleBufferTest();
     //GameLoopTest();
     //TypeObjectTest();
+    //EventQueueTest();
 
-    EventQueueTest();
+    ServiceLocatorTest();
 }

@@ -46,6 +46,9 @@
     <Filter Include="Fichiers sources\EventQueue">
       <UniqueIdentifier>{e666775b-f7cb-4efd-8f1c-e3355fc7bd40}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\ServiceLocator">
+      <UniqueIdentifier>{d1a75865-c03f-4a6a-b902-89ad11c91b2c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -101,6 +104,12 @@
     </ClCompile>
     <ClCompile Include="Audio.cpp">
       <Filter>Fichiers sources\EventQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="LogServiceInterface.h">
+      <Filter>Fichiers sources\ServiceLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="Locator.cpp">
+      <Filter>Fichiers sources\ServiceLocator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +175,12 @@
     </ClInclude>
     <ClInclude Include="Audio.h">
       <Filter>Fichiers sources\EventQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Locator.h">
+      <Filter>Fichiers sources\ServiceLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="LogService.h">
+      <Filter>Fichiers sources\ServiceLocator</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
