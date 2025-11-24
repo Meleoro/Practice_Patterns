@@ -49,6 +49,9 @@
     <Filter Include="Fichiers sources\ServiceLocator">
       <UniqueIdentifier>{d1a75865-c03f-4a6a-b902-89ad11c91b2c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\DirtyFlag">
+      <UniqueIdentifier>{22b50691-d80b-450c-853d-1fc09ba34dd3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -110,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="Locator.cpp">
       <Filter>Fichiers sources\ServiceLocator</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNode.cpp">
+      <Filter>Fichiers sources\DirtyFlag</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +187,12 @@
     </ClInclude>
     <ClInclude Include="LogService.h">
       <Filter>Fichiers sources\ServiceLocator</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Fichiers sources\DirtyFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode.h">
+      <Filter>Fichiers sources\DirtyFlag</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

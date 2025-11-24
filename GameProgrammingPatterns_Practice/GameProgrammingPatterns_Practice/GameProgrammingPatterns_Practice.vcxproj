@@ -129,6 +129,7 @@
     <ClCompile Include="FileSystem.cpp" />
     <ClCompile Include="GameActor.cpp" />
     <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="GraphNode.cpp" />
     <ClCompile Include="Locator.cpp" />
     <ClCompile Include="LogServiceInterface.h" />
     <ClCompile Include="Main.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="GameActor.h" />
     <ClInclude Include="GameLoop.h" />
+    <ClInclude Include="GraphNode.h" />
     <ClInclude Include="InputHandler.h" />
     <ClInclude Include="Locator.h" />
     <ClInclude Include="LogService.h" />
@@ -167,6 +169,7 @@
     <ClInclude Include="SubjectClassExample.h" />
     <ClInclude Include="Superpower.h" />
     <ClInclude Include="Terrain.h" />
+    <ClInclude Include="Transform.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

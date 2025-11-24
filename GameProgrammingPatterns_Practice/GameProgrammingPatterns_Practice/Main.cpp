@@ -28,6 +28,8 @@
 #include "Locator.h"
 #include "LogService.h"
 
+#include "GraphNode.h"
+
 #include <vector>
 #include <iostream>
 
@@ -164,6 +166,33 @@ void ServiceLocatorTest() {
 }
 
 
+// I used dirty flag to reproduce the architecture of a tranform hierarchy, no actualisation happen when no modifications are made for an object or it's parent
+void DirtyFlagTest() {
+    GraphNode* mainGraph = new GraphNode(NULL);
+    GraphNode* secondaryGraph = new GraphNode(NULL);
+
+    mainGraph->AddChildNode(secondaryGraph);
+
+    mainGraph->Render(Transform::Origin(), false);
+
+    std::cout << std::endl;
+
+    mainGraph->Render(Transform::Origin(), false);
+
+    std::cout << std::endl;
+
+    secondaryGraph->SetTransform(Transform::Origin());
+
+    mainGraph->Render(Transform::Origin(), false);
+
+    std::cout << std::endl;
+
+    mainGraph->SetTransform(Transform::Origin());
+
+    mainGraph->Render(Transform::Origin(), false);
+}
+
+
 int main() {
     //CommandTestLoop();
     //FlyweightTest();
@@ -175,6 +204,7 @@ int main() {
     //GameLoopTest();
     //TypeObjectTest();
     //EventQueueTest();
+    //ServiceLocatorTest();
 
-    ServiceLocatorTest();
+    DirtyFlagTest();
 }
